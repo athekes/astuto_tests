@@ -31,9 +31,6 @@ RSpec.describe Board, type: :model do
   end
 
   it 'is Orderable' do
-    # I didn't used FactoryBot because it didn't apply
-    # the custom logic to the 'order' column
-
     board1 = Board.create(name: 'b1', order: 0)
     board2 = Board.create(name: 'b2')
     board3 = Board.new
